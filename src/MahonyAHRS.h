@@ -61,6 +61,12 @@ public:
 		if (!anglesComputed) computeAngles();
 		return yaw;
 	}
+	void getQuaternion(float& w, float& x, float& y, float& z) {
+		w = q0;
+		x = q1;
+		y = q2;
+		z = q3;
+	}
 };
 
 #endif
